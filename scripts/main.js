@@ -16,9 +16,12 @@ async function getWeatherData(city) {
 }
 
 function displayWeatherData(data) {
-  console.log(data.name, "Temperature:", Math.round(data.main.temp),"C","Weather:",data.weather[0].description);
+  console.log(data.name, '- Temperature:', Math.round(data.main.temp),'C / Weather:',data.weather[0].description);
 }
 
 
-let athensData = getWeatherData("Athens");
+let athensData = getWeatherData('Athens');
 athensData.then(data => displayWeatherData(data));
+
+let glyfadaData = getWeatherData('Glyfada');
+glyfadaData.then(data => displayWeatherData(data));
