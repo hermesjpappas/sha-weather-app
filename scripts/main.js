@@ -1,3 +1,7 @@
+//weather icons courtesy of Laura Reen
+//https://www.iconfinder.com/laurareen
+
+
 let requestFront = "https://api.openweathermap.org/data/2.5/weather?q=";
 let requestBack = "&units=metric&appid=a0fea6cd1c37ef074fec6088abfdb5fb";
 
@@ -13,15 +17,10 @@ function cToF(temp) {
 async function getWeatherData(city) {
     let response = await fetch(requestFront + city + requestBack);
     let data = await response.json();
-    console.log(data);
     return data;
 }
 
-getWeatherData("Athens");
-
 function displayWeatherData(data) {
-  // console.log(data.name, '- Temperature:', Math.round(data.main.temp),
-  // 'C / Weather:',data.weather[0].description);
   cont.innerHTML = "";
   cont.style.justifyContent = "flex-start";
 
@@ -61,9 +60,6 @@ function displayWeatherData(data) {
   let humidityDisplay = document.createElement('p');
   humidityDisplay.innerHTML = '<strong>Humidity: </strong>' + humidity + '%';
   cont.appendChild(humidityDisplay);
-
-
-
 }
 
 function displayError(err) {
@@ -84,7 +80,10 @@ function makeRequest() {
   .catch(err => displayError(err));
 }
 
+
+//run data for Athens on first run / page load
 getWeatherData('Athens').then(data => displayWeatherData(data))
 
+//add button event listener to get new weather for different city
 weatherButton.addEventListener("click", makeRequest);
 
