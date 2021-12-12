@@ -34,7 +34,7 @@ function displayWeatherData(data) {
 
   let iconId = data.weather[0].icon;
   let iconImg = document.createElement("img");
-  iconImg.src = "http://openweathermap.org/img/wn/" + iconId + "@2x.png";
+  iconImg.src = "images/" + iconId + ".png";
   cont.appendChild(iconImg);
 
 }

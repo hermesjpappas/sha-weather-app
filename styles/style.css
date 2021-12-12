@@ -19,9 +19,12 @@ h1 {
 }
 
 #weather-cont {
-  height: 20rem;
+  height: 23rem;
   width: 17rem;
-  border: 2px solid black;
+  color: white;
+  background-color: rgb(66, 75, 85);
+  border-radius: 1rem;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +36,8 @@ h1 {
 }
 
 #weather-cont img {
-  width: 100%;
+  border: 2px solid;
+  width: 15rem;
 }
 
 input[type="text"] {
