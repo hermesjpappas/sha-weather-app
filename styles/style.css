@@ -19,6 +19,8 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0.2rem 0 0.2rem rgb(134, 134, 134);
 }
 
 .error {
@@ -42,11 +44,13 @@ h1 {
   flex-direction: column;
   align-items: center;
   z-index: -2;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(73, 73, 73);
 }
 
 #weather-cont h1 {
   font-size: 1.5rem;
   margin: 1rem 0;
+  text-shadow: none;
 }
 
 #weather-cont img {
@@ -69,6 +73,8 @@ input[type="text"] {
   margin-top: 1rem;
   border-radius: 0.5rem;
   border: none;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(73, 73, 73);
+
 }
 
 input[type="text"]:focus {
@@ -87,6 +93,8 @@ input[type="text"]:focus {
   border: 1px solid #777;
   background-color:steelblue;
   color: white;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(73, 73, 73);
+
 }
 
 strong {
