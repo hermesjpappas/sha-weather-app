@@ -18,6 +18,16 @@ h1 {
   font-size: 2rem;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 95%;
+  background-color: red;
+  color: white;
+}
+
 #weather-cont {
   height: 23rem;
   width: 17rem;

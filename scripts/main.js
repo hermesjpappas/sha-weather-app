@@ -70,10 +70,8 @@ function displayError(err) {
   cont.innerHTML = "";
   cont.style.justifyContent = 'center';
   let errorMsg = document.createElement('p');
+  errorMsg.classList.add('error')
   errorMsg.textContent = 'Error / City Not Found';
-  errorMsg.style.backgroundColor = 'red';
-  errorMsg.style.color = 'white';
-  errorMsg.style.fontWeight = 'bold';
   cont.appendChild(errorMsg);
 }
 
@@ -90,9 +88,3 @@ getWeatherData('Athens').then(data => displayWeatherData(data))
 
 weatherButton.addEventListener("click", makeRequest);
 
-
-// let athensData = getWeatherData('Athens');
-// athensData.then(data => displayWeatherData(data));
-
-// let glyfadaData = getWeatherData('Glyfada');
-// glyfadaData.then(data => displayWeatherData(data));
