@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Readex Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: skyblue;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+#weather-cont {
+  height: 20rem;
+  width: 17rem;
+  border: 2px solid black;
+}
+
+input[type="text"] {
+  width: 12rem;
+  height: 3rem;
+  font-family: inherit;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+}
+
+#weather {
+  width: 8rem;
+  height: 3rem;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
