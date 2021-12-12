@@ -33,7 +33,7 @@ function displayWeatherData(data) {
   //display weather icon
   let iconId = data.weather[0].icon;
   let iconImg = document.createElement("img");
-  iconImg.src = "images/" + iconId + ".png";
+  iconImg.src = 'images/' + iconId + '.png';
   cont.appendChild(iconImg);
 
   //display temperature

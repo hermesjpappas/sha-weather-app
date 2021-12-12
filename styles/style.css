@@ -48,8 +48,7 @@ h1 {
 
 #weather-cont img {
   margin-top: -0.5rem;
-  /* margin-bottom: -0.5rem; */
-  /* border: 2px solid; */
+  margin-bottom: 0.25rem;
   height: 13.5rem;
   z-index: -1;
 }
@@ -90,4 +89,82 @@ input[type="text"]:focus {
 strong {
   font-weight: bold;
   color: rgb(163, 163, 163);
+}
+
+
+@media screen and (min-width: 530px){
+  h1 {
+    font-size: 3rem;
+  }
+
+  #weather-cont{
+    width: 90%;
+    height: 30rem;
+  }
+
+  #weather-cont h1 {
+    font-size: 2rem;
+  }
+
+  #weather-cont img {
+    height: 18rem;
+    margin-bottom: 1rem;
+  }
+
+  #weather-cont p {
+    font-size: 1.2rem;
+  }
+
+  input[type="text"] {
+    width: 15rem;
+  }
+
+  #weather {
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 750px){
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #weather-cont{
+    width: 90%;
+    height: 45rem;
+  }
+
+  #weather-cont h1 {
+    font-size: 3rem;
+  }
+
+  #weather-cont img {
+    height: 30rem;
+    margin-bottom: 1rem;
+  }
+
+  #weather-cont p {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"] {
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  #weather {
+    height: 5rem;
+    width: 13rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #weather-cont {
+    width: 900px;
+  }
 }
