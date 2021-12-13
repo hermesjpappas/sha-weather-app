@@ -94,7 +94,13 @@ function makeRequest() {
 }
 
 //run data for Athens on first run / page load
-getWeatherData("Athens").then((data) => displayWeatherData(data));
+getWeatherData('Athens').then((data) => displayWeatherData(data));
+
+city.addEventListener('keyup', (e) => {
+  if(e.keyCode === 13) {
+    makeRequest();
+  }
+});
 
 //add button event listener to get new weather for different city
-weatherButton.addEventListener("click", makeRequest);
+weatherButton.addEventListener('click', makeRequest);
