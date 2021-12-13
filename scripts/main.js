@@ -80,7 +80,7 @@ function makeRequest() {
   if (cityInput.value.includes(",")) {
     let inputArr = cityInput.value.split(",");
     let city = inputArr[0].trim().replace(/\s\s+/g, "%20");
-    let country = inputArr[1].trim();
+    let country = inputArr[1].trim().replace(/ /g, '');
     output = `${city},${country}`;
   }
   else {
