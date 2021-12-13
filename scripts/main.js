@@ -97,7 +97,7 @@ function makeRequest() {
 getWeatherData('Athens').then((data) => displayWeatherData(data));
 
 city.addEventListener('keyup', (e) => {
-  if(e.keyCode === 13) {
+  if(e.keyCode === 13 || e.keyCode === 66) {
     makeRequest();
   }
 });
