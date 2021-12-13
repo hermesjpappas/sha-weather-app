@@ -96,6 +96,7 @@ function makeRequest() {
 //run data for Athens on first run / page load
 getWeatherData('Athens').then((data) => displayWeatherData(data));
 
+//add event listener on text input for an 'enter' keypress, desktop or mobile
 city.addEventListener('keyup', (e) => {
   if(e.keyCode === 13 || e.keyCode === 66) {
     makeRequest();
