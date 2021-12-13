@@ -69,7 +69,7 @@ input[type="text"] {
   height: 3rem;
   font-family: inherit;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-top: 1rem;
   border-radius: 0.5rem;
   border: none;
@@ -164,7 +164,7 @@ strong {
   input[type="text"] {
     width: 20rem;
     height: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   #weather {
