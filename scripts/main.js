@@ -72,10 +72,12 @@ function displayError(err) {
 }
 
 function makeRequest() {
-  let city = cityInput.value.replace(/ /g, '');
-  console.log(city);
+  let inputArr = cityInput.value.split(',');
+  let city = inputArr[0].trim().replace(/\s\s+/g, '%20');
+  let country = inputArr[1].trim();
+  console.log(city,country);
   if(city === '') return;
-  return getWeatherData(city)
+  return getWeatherData(`${city},${country}`)
   .then(data => displayWeatherData(data))
   .catch(err => displayError(err));
 }
