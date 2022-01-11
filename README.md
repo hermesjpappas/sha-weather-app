@@ -8,7 +8,7 @@
 <p>Icons courtesy of <a href="https://www.iconfinder.com/laurareen">Laura Reen</a>.</p>
 
 ## Instructions:
-<p>Type in the city you want to find or the city and its country code (US, GR, etc) and press Enter or click/tap on the Submit button.</p>
+<p>Type in the city you want to find or the city and its country code (US, GR, etc) and press Enter or click/tap on the Get Weather button.</p>
 <a href="https://hjp-weather.netlify.app" target="_blank">Try it out!</a>
 
 ## Issues / TO-DO:
